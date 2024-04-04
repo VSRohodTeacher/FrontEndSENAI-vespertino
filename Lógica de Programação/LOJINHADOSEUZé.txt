@@ -1,0 +1,45 @@
+Algoritmo "LojinhaDoSeuZé"
+
+Var
+opcao, tentaNovamente : caractere
+valor : real
+Inicio
+escreval("-----Lojinha do Seu Zé-----")
+escreval("A) BEBIDA = R$ 12")
+escreval("B) CHOCOLATE = R$ 80")
+escreval("C) BOLO = R$ 10")
+escreval("D) PASTEL DE QUEIJO = R$6,50")
+escreval("E) PIZZA = R$ 49")
+escreval("F) FINALIZAR PEDIDO")
+escreval("---------------------------")
+
+escreval("Qual opção é desejada?")
+leia(opcao)
+
+escolha(opcao)
+caso("A")
+   escreval("Item adicionado!")
+   valor <- 12
+caso("B")
+   escreval("Item adicionado")
+   valor <- 80
+caso("C")
+   escreval("Item adicionado")
+   valor <- 10
+caso("D")
+   escreval("Item adicionado")
+   valor <- 6.50
+caso("E")
+   escreval("Item adicionado")
+   valor <- 49
+caso("F")
+   escreval("Pedido finalizado! Agrdecemos a preferencia")
+outroCaso
+   escreval("Operação inválida")
+   escreval("Deseja tentar novamente? s/n")
+   leia(tentaNovamente)
+   limpaTela()
+fimEscolha
+// TODO PRODUTO ADICIONADO ENTREGAR SUBTOTAL
+
+Fimalgoritmo
