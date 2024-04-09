@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução CSS</title>
+    <style>
+        /* SELETORES CSS  */
+        /* .texto = CLASSE */
+        .subtitulos {
+            color: rgb(42, 93, 165);
+            /* FONT-SIZE = TAMANHO DE FONTE */
+            font-size: 13pt;
+            /* FONT-FAMILY = FAMILIA DA FONTE */
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+        }
+
+        /* texto = TAG */
+        img {
+            width: 600px;
+            /* border radius = erredondar elementos */
+            border-radius: 100%;
+            /* border = largura da borda, tipo e cor  */
+            border: 2px solid blueviolet ;
+            float: right;
+        }
+
+        /* #texto = ID */
+        #tituloPrincipal{
+            text-decoration: underline;
+            color: white;
+            background-color: black;
+            text-align: center;
+        }
+
+        .negrito{
+            /* FONT - WEIGHT = AO PESO DA FONTE */
+            font-weight: bold;
+            font-size: 25pt;
+        }
+
+        /* ID - ELEMENTO ÚNICO */
+        /* CLASS - CONJUNTO DE ELEMENTOS */
+
+        body{
+            background-color: rgb(191, 236, 237);
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="tituloPrincipal">TITULO PRINCIPAL</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas similique blanditiis dignissimos repudiandae et eius, fugiat dolorum? Ea sunt minus fugiat natus quo sit ipsum provident mollitia, autem, dolor ab?</p>
+    <h2 class="subtitulos">TITULO SECUNDARIO 1</h2>
+    <h2 style="color: blueviolet;background-color: rgb(115, 239, 233);">TITULO SECUNDARIO 2</h2>
+    <h2 class="subtitulos negrito">TITULO SECUNDARIO 3</h2>
+    <h2 class="subtitulos">TITULO SECUNDARIO 4</h2>
+
+    <img src="images/flores.jpg" alt="flores">
+    <img src="images/arvore.jpg" alt="arvore">
+</body>
+</html>
