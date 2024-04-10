@@ -1,0 +1,54 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: rgb(247, 247, 247);
+}
+
+#cabecalho {
+    width: 100%;
+    background-color: blueviolet;
+    padding: 20px 0px;
+}
+
+#cabecalho img{
+    /* altura da imagem referencia altura do cabecalho */
+    height: 10px;
+    margin-left: 30px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
+
+#banner{
+    width: 80%;
+    height: 300px;
+    margin: 20px auto;
+    border-radius: 10px;
+    /* background image = puxa a imagem */
+    background-image: url("images/sol.jpg");
+    /* background size = controla as dimensões da imagem */
+    background-size: cover ;
+    /* background repeat = controla as repetições */
+    background-repeat: no-repeat;
+    /* background position = controla a posição foco do background */
+    background-position: center;
+}
+
+#conteudo{
+    width: 80%;
+    /* margin / padding */
+    /* 1 valor = todos os lados */
+    /* 2 valores = eixo y (cima e baixo), eixo x (direita e esquerda) */
+    /* 4 valores = sentido horário (cima, direita, baixo, esquerda) */
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(224, 234, 253);
+    border-radius: 10px;
+}
