@@ -1,0 +1,70 @@
+/* keyframes = define uma animação */
+/* keyframe identifier = se refere ao nome da animação */
+/* as etapas são definidas pelas % porcentagens colocadas no bloco */
+@keyframes mudaCor {
+   0%{
+    color: black;
+   }
+   25%{
+     color: cadetblue;
+   }
+   50%{
+    color: blueviolet;
+   }
+   75%{
+    color: chartreuse;
+   }
+   100%{
+    color: black;
+   }
+}
+
+@keyframes pertubacao{
+    0%{
+        top: 0%;
+        /* background image = define uma imagem de fundo */
+        background-image: url(../images/flor.jpg);
+        background-size: cover;
+    }
+    25%{
+        top: 10%;
+        background-image: url(../images/pascoa.jpg);
+        background-size: cover;
+    }
+    50%{
+        top: 0%;
+        background-image: url(../images/roda.jpg);
+        background-size: cover;
+    }
+}
+
+h1{
+    /* animation name = nome da animação */
+    animation-name: mudaCor;
+    /* animation duration = o quanto que a animação vai demorar */
+    animation-duration: 1s;
+    /* animation delay = o quanto que a animação vai demorar para iniciar */
+    animation-delay: 1s;
+    /* animation iteration count = quantas vezes a animação irá executar */
+    animation-iteration-count: infinite ;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+/* animation : name, duration, time , delay */
+
+#caixa{
+    width: 300px;
+    height: 300px;
+    /* position = muda o posicionamento do elemento */
+    /* Absolute = fica fora da hierarquia e aceita coordenadas (top,bottom,left,right) */
+    position: absolute;
+    animation: pertubacao 5s infinite;
+    /* animation-name: pertubacao;
+    animation-iteration-count: infinite;
+    animation-duration: 5s; */
+    background-color: blue;
+}
