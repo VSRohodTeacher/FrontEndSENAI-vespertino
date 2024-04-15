@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <div class="topico">
+        <h3>FORMULÁRIO</h3>
+        <!-- Form - diz que um formulário começou -->
+        <!-- action - manda o usuário para outra página com os dados preechidos -->
+        <form action="#" method="post">
+            <!-- method -> metodos de envio -->
+            <!-- post = manda as informações diretas para o servidor -->
+            <!-- get = coloca as informações no url e manda para o servidor -->
+            <div class="espaco">
+                <!-- label = auxiliador do formulário -->
+                <label for="nomeDoUsuario">Nome do usuário</label>
+                <!-- input tipo text = recebe um texto, ou conjunto de caracteres -->
+                <input required type="text" id="nomeDoUsuario">
+            </div>
+
+            <div class="espaco">
+                <label for="senhaDoUsuario">Insira a sua senha</label>
+                <input required maxlength="8" type="password" id="senhaDoUsuario">
+                <!-- disabled - desativa input -->
+            </div>
+
+            <div class="espaco">
+                <label for="emailDoUsuario">Insira o seu email</label>
+                <input required placeholder="fulano@email.com" type="email" id="emailDoUsuario">
+            </div>
+
+            <div class="espaco">
+                <label for="idadeDoUsuario">Insira a sua idade</label>
+                <input min="0" step="1" max="200" type="number" id="idadeDoUsuario">
+            </div>
+
+            <div class="espaco">
+                <label for="aceitaNotificar">Aceita notificações no email? </label>
+                <input type="checkbox" id="aceitaNotificar">
+            </div>
+
+            <div class="espaco">
+                <label for="nascimentoDoUsuario">Insira a data de nascimento </label>
+                <input type="date" id="nascimentoDoUsuario">
+            </div>
+
+            <div class="espaco">
+                <label for="estadoDoUsuario">Qual estado você mora</label>
+                <select id="estadoDoUsuario">
+                    <!-- OPTION = DEFINE UMA OPÇÃO NO SELECT -->
+                    <option value=""> - </option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </select>
+            </div>
+
+            <div class="espaco">
+                <label for="telefoneDoUsuario">Digite o seu telefone</label>
+                <input type="tel" id="telefoneDoUsuario">
+            </div>
+
+            <div class="espaco">
+                <label for="feedback"></label>
+                <textarea id="feedback" cols="30" rows="10">Um feedback muito bacana</textarea>
+            </div>
+
+            <div class="espaco">
+                <!-- radio - input de escolha -->
+                <!-- name no radio = define vários radios dentro de um mesmo agrupamento -->
+                <h3>Nivel de escolariedade</h3>
+                <label for="ensinoBasico">Ensino Básico</label>
+                <input type="radio" id="ensinoBasico" name="ensino">
+                <!-- hr - linha de separação -->
+                <hr>
+                <label for="ensinoMedio">Ensino Médio</label>
+                <input type="radio" id="ensinoMedio" name="ensino">
+                <hr>
+                <label for="ensinoSuperior">Ensino Superior</label>
+                <input type="radio" id="ensinoSuperior" name="ensino">
+            </div>
+
+            <div class="espaco">
+                <h3>Outros Inputs</h3>
+                <input type="color">
+                <hr>
+                <input type="file" id="foto">
+                <hr>
+                <input type="datetime-local" id="">
+                <hr>
+                <input type="button" value="Botao">
+                <hr>
+                <input type="hidden">
+            </div>
+
+            <div class="espaco">
+                <!-- maneira 1 -->
+                <!-- <input type="submit" value="Cadastrar"> -->
+
+                <!-- maneira 2 -->
+                <button type="submit">Cadastrar</button>
+                <button type="reset">Resetar Formulário</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

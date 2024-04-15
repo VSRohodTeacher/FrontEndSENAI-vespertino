@@ -1,0 +1,22 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: cursive;
+}
+
+h3{
+    text-align: center;
+    color: blueviolet;
+}
+
+.topico{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: azure;
+}
+
+.espaco{
+    margin: 20px;
+}
