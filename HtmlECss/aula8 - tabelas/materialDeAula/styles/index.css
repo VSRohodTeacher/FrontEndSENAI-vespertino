@@ -1,0 +1,77 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+th{
+    color: white;
+    background-color: rgb(46, 45, 45);
+}
+
+td{
+    background-color: azure;
+    transition: 2s;
+}
+
+th:hover{
+    background-color: rgb(115, 172, 31);
+}
+
+td:active{
+    border: 2px solid green;
+    transition: 0.2s;
+
+}
+
+thead{
+    position: sticky;
+    top: -1px;
+}
+
+th:empty{
+    background-color: transparent;
+    border: none;
+}
+
+#abreScroll{
+    width: 1px;
+    height: 2000px;
+}
+
+@keyframes efeito {
+    0%{
+        border: 1px solid black;
+    }
+    25%{
+        border: 1px solid rgb(205, 21, 8);
+    }
+    50%{
+        border: 1px solid rgb(240, 78, 66);
+    }
+    75%{
+        border: 1px solid rgb(205, 21, 8);
+    }
+    100%{
+        border: 1px solid black;
+    }
+}
+
+input{
+    border: none;
+    border: 1px solid black;
+}
+
+input:focus{
+    border: none;
+    outline: none;
+    animation: efeito 2s infinite;
+}
