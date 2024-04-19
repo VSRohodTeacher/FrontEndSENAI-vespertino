@@ -1,14 +1,42 @@
+/* font face = anexa uma fonte ao projeto */
+@font-face {
+    /* font family = define o nome da fonte instalada */
+    font-family: Roboto;
+    /* src = onde essa fonte está localizada */
+    src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: Warzone;
+    src: url(../fonts/warzone_2/Warzone.ttf);
+}
+
 /* geral */
 *{
     padding: 0%;
     margin: 0%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Roboto, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: Warzone;
 }
 
 section{
     width: 100%;
     padding: 10px 0px;
     display: flex;
+}
+
+.tituloSection{
+    text-align: center;
+    font-weight: bold;
+}
+
+.subtituloSection{
+    text-align: center;
+    font-size: 10pt;
+    color: gray;
 }
 
 /* header */
@@ -72,7 +100,9 @@ nav a {
 .topicoImagem{
     width: 100px;
     height: 100px;
-    background-color: black ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 100%;
     margin-top: 20px;
 }
@@ -84,4 +114,127 @@ nav a {
     background-color: transparent;
     padding: 6px;
     cursor: pointer;
+}
+
+#topicoDicas{
+    background-image: url(../images/ImagensGeral/dica.png);
+}
+
+#topicoNoticias{
+    background-image: url(../images/ImagensGeral/noticias.png);
+}
+
+#topicoEquipamentos{
+    background-image: url(../images/ImagensGeral/equipamentos.png)
+}
+
+/* agenda */
+#agenda{
+    flex-direction: column;
+    background-color: rgb(202, 202, 202);
+    gap: 20px;
+}
+
+#seletores{
+    display: flex;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+#seletores select{
+    width: 300px;
+    height: 30px;
+}
+
+#eventos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.evento{
+    width: 200px;
+    height: 150px;
+    display: flex;
+    font-size: 8pt;
+}
+
+.dataEvento{
+    width: 80px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+.evento button{
+    border: none;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.descEvento{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0px 8px;
+}
+
+
+
+
+/* email */
+#emailSecao{
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+#email{
+    width: 80%;
+    height: 30px;
+}
+
+#cadastrar{
+    width: 200px;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+/* footer */
+footer {
+    width: 100%;
+    background-color: rgb(56, 56, 56);
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.redes{
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 8pt;
+    text-align: center;
+}
+
+.redes img{
+    width: 100%;
 }

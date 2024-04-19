@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bikes</title>
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <header>
@@ -29,7 +30,7 @@
         <section id="topicos">
             <!-- dicas -->
             <div class="topicoGrupo">
-                <div class="topicoImagem" id="topicoDicas"></div>
+                <div class="animate__infinite animate__animated animate__pulse topicoImagem" id="topicoDicas"></div>
                 <h3>DICAS</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae itaque possimus, accusamus expedita quisquam est voluptate voluptatum atque animi natus aspernatur. Dolorum numquam iste eaque harum quae quas fugiat incidunt!</p>
                 <button type="button">VER MAIS</button>
@@ -37,7 +38,7 @@
 
             <!-- noticias -->
             <div class="topicoGrupo">
-                <div class="topicoImagem" id="topicoNoticias"></div>
+                <div class="animate__infinite animate__animated animate__pulse topicoImagem" id="topicoNoticias"></div>
                 <h3>NOTICIAS</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, quisquam doloribus reprehenderit dolore quaerat distinctio aperiam maiores, hic eveniet sapiente error eum voluptatibus consectetur aliquid eos saepe ipsum, quas facere!</p>
                 <button type="button">VER MAIS</button>
@@ -45,7 +46,7 @@
             
             <!-- equipamentos -->
             <div class="topicoGrupo">
-                <div class="topicoImagem" id="topicoEquipamentos"></div>
+                <div class="animate__infinite animate__animated animate__pulse topicoImagem" id="topicoEquipamentos"></div>
                 <h3>EQUIPAMENTOS</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facere asperiores veritatis corrupti, iure nostrum, voluptatem quos hic esse aut commodi ab pariatur temporibus quasi! Asperiores perspiciatis quam repudiandae! Autem!</p>
                 <button type="button">VER MAIS</button>
@@ -53,14 +54,98 @@
 
 
         </section>
+
         <!-- agenda com horários -->
-        <section id="agenda"></section>
+        <section id="agenda">
+            <h3 class="tituloSection">AGENDA</h3>
+            <p class="subtituloSection">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure laudantium vero, hic cupiditate veritatis fuga officia totam, perspiciatis inventore nemo sequi error. Velit iste libero dolor adipisci a rem. Facere.</p>
+            
+            <div id="seletores">
+                <select id="seletor1">
+                    <option value=""></option>
+                </select>
+                <select id="seletor2">
+                    <option value=""></option>
+                </select>
+            </div>
+
+            <div id="eventos">
+                <div class="evento">
+                    <div class="dataEvento">
+                        MAR 25
+                    </div>
+                    <div class="descEvento">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ipsum rerum, quas quibusdam quae provident maxime excepturi eum dignissimos optio architecto praesentium, nam facere accusamus ratione quam commodi, fugiat nostrum!</p>
+                        <button type="button"> VER MAIS </button>
+                    </div>
+                </div>
+                <div class="evento">
+                    <div class="dataEvento">
+                        MAR 25
+                    </div>
+                    <div class="descEvento">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ipsum rerum, quas quibusdam quae provident maxime excepturi eum dignissimos optio architecto praesentium, nam facere accusamus ratione quam commodi, fugiat nostrum!</p>
+                        <button type="button"> VER MAIS </button>
+                    </div>
+                </div>
+                <div class="evento">
+                    <div class="dataEvento">
+                        MAR 25
+                    </div>
+                    <div class="descEvento">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ipsum rerum, quas quibusdam quae provident maxime excepturi eum dignissimos optio architecto praesentium, nam facere accusamus ratione quam commodi, fugiat nostrum!</p>
+                        <button type="button"> VER MAIS </button>
+                    </div>
+                </div>
+                
+                
+
+            </div>
+
+        </section>
+
         <!-- seção de galeria -->
-        <section id="galeria"></section>
+        <section id="galeria">
+            <h3 class="tituloSection">GALERIA</h3>
+            <p class="subtituloSection">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure laudantium vero, hic cupiditate veritatis fuga officia totam, perspiciatis inventore nemo sequi error. Velit iste libero dolor adipisci a rem. Facere.</p>
+        
+        </section>
+
         <!-- seção do email -->
-        <section id="emailSecao"></section>
+        <section id="emailSecao">
+            <h3 class="tituloSection">NEWSLETTER</h3>
+            <p class="subtituloSection">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure laudantium vero, hic cupiditate veritatis fuga officia totam, perspiciatis inventore nemo sequi error. Velit iste libero dolor adipisci a rem. Facere.</p>
+        
+            <input type="email" id="email">
+            <button type="button" id="cadastrar"> CADASTRAR </button>
+        </section>
+
     </main>
 
-    <footer></footer>
+    <!-- png - tamanho fixo, distorce a qualidade quando aumentado -->
+    <!-- <img width="600px" src="images/aplicativosPNG.png" alt=""> -->
+    <!-- svg - manda uma fórmula e o computador monta a imagem dinamicamente -->
+    <!-- <img width="600px" src="images/aplicativosSVG.svg" alt=""> -->
+
+    <footer>
+        <div class="redes">
+            <div class="redesIcone">
+                <img src="images/RedesSociais/iconescirculo/twitter.png" alt="logoTwitter">
+            </div>
+            <a href="#">@Bikes</a>
+        </div>
+        <div class="redes">
+            <div class="redesIcone">
+                <img src="images/RedesSociais/iconescirculo/orkut_active.png" alt="logoOrkut">
+            </div>
+            <a href="#">@BikesOFICIAL</a>
+        </div>
+        <div class="redes">
+            <div class="redesIcone">
+                <img src="images/RedesSociais/iconescirculo/facebook.png" alt="logoFacebook">
+            </div>
+            <a href="#">Projeto Bikes OFICIAL</a>
+        </div>
+    </footer>
 </body>
 </html>
