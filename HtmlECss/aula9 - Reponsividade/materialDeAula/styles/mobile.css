@@ -1,0 +1,44 @@
+header{
+    justify-content: center;
+}
+
+#menuPc{
+    display: none;
+}
+
+#menuMobile {
+    display: none;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#btnMobile{
+    display: flex;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+li{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+li:hover{
+    border-radius: 10px;
+    background-color: rgba(166, 166, 166, 0.648);
+    cursor: pointer;
+    transition: 0.5s;
+}

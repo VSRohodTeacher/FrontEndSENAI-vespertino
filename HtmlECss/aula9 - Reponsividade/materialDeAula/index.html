@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" media="screen and (max-width: 860px)" href="styles/mobile.css">
+    <!-- print = versão impressa do site -->
+    <!-- screen and (orientation : portrait) = celular em modo retrato (em pé) -->
+    <!-- screen and (orientation : landscape) = celular em modo paisagem (deitado) -->
+    <link rel="stylesheet" media="screen and (orientation : landscape)" href="styles/teste.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button id="btnMobile" onclick="btnMobileTrocar()" type="button">
+                <img src="images/menuIcon.svg" alt="menu icon">
+            </button>
+
+            <ul id="menuMobile">
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+            <ul id="menuPc">
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <picture>
+            <source media="screen and (max-width : 860px)" srcset="images/mulherdancandoMenor.jpg"> 
+            <img src="images/mulherdancando.jpg" alt="Uma mulher dançando">
+        </picture>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quisquam nemo voluptas, facilis aut dolorum quam modi eius atque nesciunt delectus voluptate corporis tempore quidem voluptates iure sed accusamus ipsum.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quisquam nemo voluptas, facilis aut dolorum quam modi eius atque nesciunt delectus voluptate corporis tempore quidem voluptates iure sed accusamus ipsum.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quisquam nemo voluptas, facilis aut dolorum quam modi eius atque nesciunt delectus voluptate corporis tempore quidem voluptates iure sed accusamus ipsum.</p>
+    </main>
+
+    <footer>
+        Todos os direitos reservados!
+    </footer>
+
+    <script>
+        // procedimento palavra() 
+
+        // fimProcedimento
+
+        function btnMobileTrocar() {
+            if (menuMobile.style.display == "flex"){
+                menuMobile.style.display = "none";
+            }else{
+                menuMobile.style.display = "flex";
+            }
+        }
+    </script>
+</body>
+</html>
