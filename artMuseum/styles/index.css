@@ -1,0 +1,118 @@
+
+/* elemento utilizado para guardar variaveis */
+/* geralmente para otimizar e economizar tempo */
+:root{
+    --corPrimaria : #2A2B2A ;
+    --corSecundaria : #F5124B ; 
+    --preto : #1c1c1c ;
+    --branco : #ecebeb;
+    --fontePrincipal : 'Trebuchet MS' ;
+    --tamanhoFonteTitulo : 24pt ;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: var(--fontePrincipal);
+}
+
+header, footer {
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    background-color: var(--corPrimaria);
+    color: var(--branco);
+}
+
+a{
+    text-decoration:none ;
+    color: var(--branco);
+}
+
+header{
+    justify-content: space-around;
+}
+
+footer{
+    justify-content: center;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+section {
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr{
+    width: 80%;
+    border: none;
+    border: 1px solid var(--corSecundaria);
+}
+
+#catalogo{
+    gap: 20px;
+}
+
+#catalogoItems{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.item{
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.item img{
+    width: 80%;
+}
+
+#menuMobile{
+    display: none;
+}
+
+#btnMobile{
+    display: none;
+}
+
+#artigo{
+    gap: 20px;
+}
+
+#elizabeth{
+    width: 70%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    gap: 30px;
+}
+
+#elizabeth img{
+    width: 100%;
+}
+
+button{
+    padding: 10px;
+    border: none;
+    background-color: var(--corSecundaria);
+    color: var(--branco);
+    cursor: pointer;
+    border-radius: 5px;
+}

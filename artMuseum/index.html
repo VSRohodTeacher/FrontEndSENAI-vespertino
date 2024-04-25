@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtMuseum</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" media="screen and (max-width : 680px)" href="styles/@media.css">
+</head>
+<body>
+    <header>
+        <h3>ArtMuseum</h3>
+        <nav id="menuPc">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <button type="button" id="btnMobile" onclick="alternarMenu()">
+            -
+        </button>
+    </header>
+    <nav id="menuMobile">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Galeria</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="artigo">
+            <h3>DESTAQUES DA SEMANA</h3>
+            <hr>
+            <section id="elizabeth">
+                <h3>ELIZABETH</h3>
+                <picture>
+                    <source media="screen and (max-width : 680px)" srcset="images/elizabethMenor.png"> 
+                    <img src="images/elizabeth.jpg" alt="a imagem de uma mulher">
+                </picture>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, voluptatibus explicabo. Harum aperiam facere porro ab iste et, enim quam tempora veniam, sapiente iusto ex cum numquam voluptatibus! Sunt, architecto.</p>
+                <button type="button">VER SOBRE</button>
+            </section>
+        </section>
+        
+
+
+        <section id="catalogo">
+            <h3>ARTES</h3>
+            <hr>
+            <div id="catalogoItems">
+                <div class="item">
+                    <h4>TITULO DA ARTE</h4>
+                    <img src="images/arte1.jpg" alt="">
+                    <p>DESCRIÇÃO ARTE</p>
+                    <button type="button">VER SOBRE</button>
+                </div>
+                <div class="item">
+                    <h4>TITULO DA ARTE</h4>
+                    <img src="images/arte2.jpg" alt="">
+                    <p>DESCRIÇÃO ARTE</p>
+                    <button type="button">VER SOBRE</button>
+                </div>
+                <div class="item">
+                    <h4>TITULO DA ARTE</h4>
+                    <img src="images/arte3.jpg" alt="">
+                    <p>DESCRIÇÃO ARTE</p>
+                    <button type="button">VER SOBRE</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        TODOS DIREITOS RESERVADOS 2024
+    </footer>
+
+    <script>
+        function alternarMenu(){
+            if(menuMobile.style.display == "none"){
+                menuMobile.style.display = "flex";
+            }else{
+                menuMobile.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
