@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawShop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images/logo/logoDark.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <header class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="images/logo/logoWhite.svg" alt="logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Adoção</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contatos</a>
+                  </li>
+                </ul>
+                <button type="button" class="btn">
+                    <img src="images/icons/moon.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main class="container-fluid p-0">
+        <section id="banner">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <!-- BREAKPOINTS - são a responsividade de um site, cada breakpoint é um @media pré definido pelo bootstrap -->
+                    <!-- sm-comando = small -->
+                    <!-- md-comando = médio -->
+                    <!-- lg-comando = largo -->
+                    <!-- xlg-comando = extra largo -->
+                  <div class="carousel-item active">
+                    <img src="images/banner/bannerMobile/bannerMobile.png" class="d-flex d-md-none d-lg-none w-100" alt="">
+                    <img src="images/banner/bannerTablet/bannerTablet.png" class="d-none d-md-flex d-lg-none w-100" alt="">
+                    <img src="images/banner/banner.png" class="d-none d-md-none d-lg-flex w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/banner/bannerMobile/bannerMobile2.png" class="d-flex d-md-none d-lg-none w-100" alt="">
+                    <img src="images/banner/bannerTablet/bannerTablet2.png" class="d-none d-md-flex d-lg-none w-100" alt="">
+                    <img src="images/banner/banner2.png" class="d-none d-md-none d-lg-flex w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/banner/bannerMobile/bannerMobile3.png" class="d-flex d-md-none d-lg-none w-100" alt="">
+                    <img src="images/banner/bannerTablet/bannerTablet3.png" class="d-none d-md-flex d-lg-none w-100" alt="">
+                    <img src="images/banner/banner3.png" class="d-none d-md-none d-lg-flex w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+        <section id="introducao" class="d-flex flex-column align-items-center">
+            <h3>SEU PET PRECISA DE COMIDA? OU DE UNS PETISCOS? VOCÊ ESTÁ NO LUGAR CERTO!</h3>
+            <div id="dogs" class="container row">
+                <img class="col-3 m-0 p-0" src="images/dogsSection/img1.png" alt="">
+                <img class="col-3 m-0 p-0" src="images/dogsSection/img2.png" alt="">
+                <img class="col-3 m-0 p-0" src="images/dogsSection/img3.png" alt="">
+                <img class="col-3 m-0 p-0" src="images/dogsSection/img4.png" alt="">
+
+            </div>
+            <p class="m-5 text-center">Na nossa empresa, sabemos que seu pet é mais do que apenas um animal de estimação; ele é parte da sua família. Por isso, estamos comprometidos em fornecer os melhores cuidados do mercado, garantindo que seu amiguinho peludo receba toda a atenção, carinho e proteção de que ele precisa. A responsabilidade é o nosso lema, e cuidar do seu pet como se fosse o nosso próprio é a nossa missão. Com uma equipe dedicada de profissionais apaixonados por animais, instalações de ponta e uma variedade de serviços que atendem a todas as necessidades do seu pet, estamos aqui para garantir que ele tenha uma vida feliz e saudável. Deixe-nos cuidar do seu pet, para que você possa aproveitar cada momento especial com ele, sabendo que está em mãos seguras e amorosas.</p>
+        </section>
+        <section id="catalogo" class="d-flex flex-column align-items-center">
+            <h3>CATÁLOGO DE PRODUTOS</h3>
+            <div id="catalogoItems" class="d-flex justify-content-center">
+                <!-- coleira -->
+                <div class="card p-3" style="width: 24rem;">
+                    <img src="images/products/productImage.png" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column align-items-center">
+                      <h4 class="card-title">COLEIRA</h4>
+                      <p class="card-text">A coleira é o acessório essencial para manter o seu companheiro de quatro patas seguro e com estilo. Feita com materiais de alta qualidade, nossa coleira é resistente e confortável para o seu cão. Com diversos designs e cores disponíveis, você pode encontrar a coleira perfeita que combina com a personalidade do seu peludo amigo. Além de proporcionar segurança durante os passeios, a coleira é uma expressão do amor e cuidado que você tem pelo seu cão.</p>
+                      <h5>R$ 100</h5>
+                      <button data-bs-target="#modalColeira" data-bs-toggle="modal" type="button" class="btn btn-primary">VER MAIS</button>
+                    </div>
+                  </div>
+            </div>
+        </section>
+        <section id="adote"></section>
+    </main>
+
+    <footer class="container-fluid"></footer>
+
+    <!-- modais e offcanvas -->
+    <!-- modal da coleira -->
+    <div class="modal fade" id="modalColeira" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            ...
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
+</body>
+</html>
